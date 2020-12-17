@@ -2,7 +2,7 @@ header
 {
     width: 350px;
     display: flex;
-    position: fixed;
+    position: absolute;
     justify-content: space-between;
     right: 50px;
 }
@@ -17,9 +17,8 @@ header
     width: 290px;
     height: 50px;
     border-radius: 30px;
-
 }
-#test
+#town
 {
     position: relative;
     left: 5px;
@@ -39,4 +38,32 @@ input[type=submit]
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
+}
+#block
+{
+    width: 100%;
+    height: 500px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+#accommodation, #popular
+{
+    background-color: rgb(218, 218, 218);
+    border-radius: 30px;
+}
+#accommodation
+{
+    width: 55%;
+}
+#accomodation_content
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 20px;
+    justify-content: space-between;
+}
+#picture
+{
+    width: 230px;
+    height: 120px;
 }
