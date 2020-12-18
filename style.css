@@ -1,3 +1,7 @@
+body
+{
+    width: auto;
+}
 header
 {
     width: 350px;
@@ -41,9 +45,10 @@ input[type=submit]
 }
 #block
 {
-    width: 100%;
+    width: 90%;
     height: 600px;
-    display: inline-flex;
+    margin: 0px auto 40px;
+    display: flex;
     justify-content: space-between;
 }
 #accommodation, #popular
@@ -53,14 +58,13 @@ input[type=submit]
 }
 #accommodation
 {
-    width: 55%;
+    width: 60%;
 }
 #accomodation_content
 {
     display: flex;
     flex-wrap: wrap;
-    margin: 0px 20px;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 #accomodation_frame
 {
@@ -71,11 +75,37 @@ input[type=submit]
     border-radius: 20px;
     background-color: white;
 }
-#accomodation_pictures
+.accomodation_picture
 {
     width: 230px;
     height: 120px;
-    border-radius: 20px 20px 0px 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 250px;
+    border-radius: 15px 15px 0px 0px;
+}
+.accomodation_picture1
+{
+    background-image: url("images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+}
+.accomodation_picture2
+{
+    background-image: url("images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+}
+.accomodation_picture3
+{
+    background-image: url("images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+}
+.accomodation_picture4
+{
+    background-image: url("images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+}
+.accomodation_picture5
+{
+    background-image: url("images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+}.accomodation_picture6
+{
+    background-image: url("images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
 }
 #accomodation_text
 {
@@ -84,7 +114,7 @@ input[type=submit]
 }
 #popular
 {
-    width: 25%;
+    width: 35%;
 }
 #popular_content
 {
@@ -95,29 +125,49 @@ input[type=submit]
 {
     width: 80%;
     display: inline-flex;
-    margin: 15px auto;
+    margin: 0px auto 25px;
     padding: 5px;
     background-color: white;
     border-radius: 20px;
 }
-#popular_pictures
+.popular_picture
 {
-    width: 150px;
-    height: 140px;
-    border-radius: 20px 0px 0px 20px;
+    width: 130px;
+    height: 130px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200px;
+    border-radius: 15px 0px 0px 15px;
+}
+.popular_picture1
+{
+    background-image: url("images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+}
+.popular_picture2
+{
+    background-image: url("images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg");
+}
+.popular_picture3
+{
+    background-size: 130px !important;
+    background-image: url("images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
 }
 #popular_text
 {
     display: flex;
     flex-direction: column;
 }
-#activities
+#test1
 {
     width: 90%;
-    height: 500px;
+    margin: auto;
+}
+#activities
+{
+    height: 400px;
     justify-content: space-between;
     display: flex;
-
+    margin-bottom: 60px;
 }
 #activities_pictures_high
 {
@@ -125,7 +175,25 @@ input[type=submit]
     height: 350px;
     border-radius: 20px 20px 0px 0px;
 }
-#activities_pictures_small
+#activities_pictures_small1
+{
+    width: 280px;
+    height: 150px;
+    border-radius: 20px 20px 0px 0px;
+}
+#activities_pictures_small2
+{
+    width: 280px;
+    height: 100px;
+    border-radius: 20px 20px 0px 0px;
+}
+#activities_pictures_small3
+{
+    width: 280px;
+    height: 120px;
+    border-radius: 20px 20px 0px 0px;
+}
+#activities_pictures_small4
 {
     width: 280px;
     height: 170px;
@@ -135,9 +203,15 @@ input[type=submit]
 {
     display: flex;
     flex-direction: column;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 3px 10px 5px rgb(242, 242, 242);;
 }
-
-
+#test
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 footer
 {
     display: flex;
