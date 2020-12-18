@@ -42,13 +42,13 @@ input[type=submit]
 #block
 {
     width: 100%;
-    height: 500px;
+    height: 600px;
     display: inline-flex;
     justify-content: space-between;
 }
 #accommodation, #popular
 {
-    background-color: rgb(218, 218, 218);
+    background-color: rgb(242, 242, 242);
     border-radius: 30px;
 }
 #accommodation
@@ -62,13 +62,91 @@ input[type=submit]
     margin: 0px 20px;
     justify-content: space-between;
 }
-#pictures_accomodation
+#accomodation_frame
+{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0px;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: white;
+}
+#accomodation_pictures
 {
     width: 230px;
     height: 120px;
+    border-radius: 20px 20px 0px 0px;
 }
-#pictures_popular
+#accomodation_text
+{
+    display: flex;
+    flex-direction: column;
+}
+#popular
+{
+    width: 25%;
+}
+#popular_content
+{
+    display: flex;
+    flex-direction: column;
+}
+#popular_frame
+{
+    width: 80%;
+    display: inline-flex;
+    margin: 15px auto;
+    padding: 5px;
+    background-color: white;
+    border-radius: 20px;
+}
+#popular_pictures
 {
     width: 150px;
-    height: 120px;
+    height: 140px;
+    border-radius: 20px 0px 0px 20px;
+}
+#popular_text
+{
+    display: flex;
+    flex-direction: column;
+}
+#activities
+{
+    width: 90%;
+    height: 500px;
+    justify-content: space-between;
+    display: flex;
+
+}
+#activities_pictures_high
+{
+    width: 280px;
+    height: 350px;
+    border-radius: 20px 20px 0px 0px;
+}
+#activities_pictures_small
+{
+    width: 280px;
+    height: 170px;
+    border-radius: 20px 20px 0px 0px;
+}
+#activities_frame
+{
+    display: flex;
+    flex-direction: column;
+}
+
+
+footer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(242, 242, 242);
+}
+#footer_content
+{
+    display: flex;
+    flex-direction: column;
 }
