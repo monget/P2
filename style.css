@@ -62,8 +62,13 @@ input[type=submit]
     margin: 0px 20px;
     justify-content: space-between;
 }
-#picture
+#pictures_accomodation
 {
     width: 230px;
+    height: 120px;
+}
+#pictures_popular
+{
+    width: 150px;
     height: 120px;
 }
