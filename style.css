@@ -118,6 +118,13 @@ input[type=submit]
 {
     display: flex;
     flex-direction: column;
+    padding-left: 10px;
+}
+#host
+{
+    margin: 10px 0px;
+    font-size: large;
+    font-weight: bold;
 }
 #popular
 {
@@ -169,6 +176,7 @@ input[type=submit]
 {
     display: flex;
     flex-direction: column;
+    padding-left: 20px;
 }
 #block2
 {
