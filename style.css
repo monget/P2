@@ -74,6 +74,7 @@ input[type=submit]
     border-radius: 0px 15px 15px 0px;
     border: none;
     outline: none;
+    cursor: pointer;
 }
 #filter
 {
@@ -83,7 +84,7 @@ input[type=submit]
     justify-content: space-between;
     margin-bottom: 30px;
 }
-#filter button
+button
 {
     z-index: 2;
     position: relative;
@@ -99,6 +100,10 @@ input[type=submit]
     outline: none;
     cursor: pointer;
 }
+button:hover
+{
+    background-color: rgb(217, 217, 217);
+}
 #filter div
 {
     height: 45px;
@@ -113,7 +118,7 @@ input[type=submit]
 .fa-info
 {
     font-size: 12px;
-    width: 10px;
+    width: 12px;
     padding: 7px;
     margin-right: 10px;
     text-align: center;
@@ -171,11 +176,11 @@ input[type=submit]
 }
 .accomodation_picture
 {
-    width: 250px;
+    width: 260px;
     height: 120px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 250px;
+    background-size: 260px;
     border-radius: 15px 15px 0px 0px;
 }
 .accomodation_picture1
@@ -430,7 +435,7 @@ footer
 #footer_content
 {
     display: flex;
-    margin-right: 250px;
+    margin-right: 300px;
     flex-direction: column;
 }
 #footer_content a
