@@ -8,6 +8,7 @@
 }
 body
 {
+    margin: 0px;
     font-family: raleway-bold, sans-serif;
 }
 header
@@ -19,8 +20,9 @@ header
     justify-content: space-between;
     right: 100px;
 }
-header a
+body a
 {
+    color: black;
     text-decoration: none;
 }
 #block
@@ -34,11 +36,19 @@ header a
     height: 50px;
     margin-top: 50px;
 }
+h1
+{
+    margin-bottom: 0px;
+}
+#block p
+{
+    margin-top: 5px;
+}
 #search
 {
     display: flex;
     flex-direction: row;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .fa-map-marker-alt
 {
@@ -87,6 +97,7 @@ input[type=submit]
     border-radius: 100%;
     border: none;
     outline: none;
+    cursor: pointer;
 }
 #filter div
 {
@@ -132,13 +143,9 @@ input[type=submit]
     width: 90%;
     margin: auto;
 }
-#accommodation_block a
+#block1 a
 {
-    font-family: raleway-bold;
-    font-size: 18px;
-    font-weight: bold;
-    color: black;
-    text-decoration: none;
+    font-family: raleway;
 }
 #accommodation h2
 {
@@ -409,13 +416,24 @@ input[type=submit]
 }
 footer
 {
+    height: 220px;
+    display: flex;
+    background-color: rgb(242, 242, 242);
+}
+#block_footer
+{
+    width: 90%;
+    margin: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    background-color: rgb(242, 242, 242);
 }
 #footer_content
 {
     display: flex;
+    margin-right: 250px;
     flex-direction: column;
+}
+#footer_content a
+{
+    margin-bottom: 15px;
 }
