@@ -55,11 +55,7 @@ body a
 }
 h1
 {
-    margin-bottom: 0px;
-}
-#block p
-{
-    margin-top: 5px;
+    margin-bottom: -10px;
 }
 #search
 {
@@ -118,19 +114,23 @@ button
     outline: none;
     cursor: pointer;
 }
-button:hover
-{
-    background-color: rgb(217, 217, 217);
-}
-#filter div
+
+#filter a
 {
     height: 45px;
     z-index: 1;
     border-radius: 50px;
+    vertical-align: baseline;
     border: 2px solid rgb(217, 217, 217);
+}
+#filter a:hover button
+{
+    background-color: rgb(217, 217, 217);
 }
 #filter span
 {
+    position: relative;
+    bottom: 4px;
     margin: 0px 20px 0px 5px;
 }
 .fa-info
