@@ -13,12 +13,29 @@ body
 }
 header
 {
-    width: 350px;
+    width: 500px;
+    height: 60px;
     display: flex;
     position: absolute;
-    top: 50px;
-    justify-content: space-between;
+    justify-content: space-around;
     right: 100px;
+}
+.header_block
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.lign
+{
+    border: 1px solid rgb(0, 101, 252);
+}
+.header_block a
+{
+    padding: 0px 30px;
+    position: relative;
+    top: 40px;
+    color: rgb(32, 120, 253);
 }
 body a
 {
@@ -59,7 +76,8 @@ h1
 }
 #town
 {
-    width: 230px;
+    width: 200px;
+    padding-left: 20px;
     left: 5px;
     height: 44px;
     outline: none;
