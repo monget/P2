@@ -28,14 +28,24 @@ header
 }
 .lign
 {
+    visibility: hidden;
+    position: relative;
+    bottom: 69px;
     border: 1px solid rgb(0, 101, 252);
 }
 .header_block a
 {
-    padding: 0px 30px;
+    width: 160%;
     position: relative;
-    top: 40px;
-    color: rgb(32, 120, 253);
+    top: 50px;
+}
+.header_block a:hover
+{
+    color: rgb(0, 101, 252);
+}
+.header_block a:hover .lign
+{
+    visibility: visible;
 }
 body a
 {
@@ -114,7 +124,6 @@ button
     outline: none;
     cursor: pointer;
 }
-
 #filter a
 {
     height: 45px;
