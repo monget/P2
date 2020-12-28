@@ -2,6 +2,7 @@
 {
     font-family: 'Raleway';
     src: url('polices/static/Raleway-ExtraLight.ttf') format('truetype'),
+         url('polices/static/Raleway-Light.ttf') format('truetype'),
          url('polices/static/Raleway-Bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -25,6 +26,11 @@ header
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+.register
+{
+    font-weight: bolder;
+    color: rgb(0, 101, 252);
 }
 .lign
 {
@@ -52,7 +58,7 @@ body a
     color: black;
     text-decoration: none;
 }
-#block
+.section_filter
 {
     width: 90%;
     margin: auto;
@@ -153,7 +159,7 @@ button
     color: rgb(0, 101, 256);
     border: 1px solid #d9d9d9;
 }
-#block1
+#section_accomodation
 {
     width: 90%;
     height: 650px;
@@ -175,7 +181,7 @@ button
     width: 90%;
     margin: auto;
 }
-#block1 a
+#section_accomodation a
 {
     font-family: raleway;
 }
@@ -190,7 +196,7 @@ button
     justify-content: space-between;
     margin-bottom: 20px;
 }
-#accomodation_frame
+.accomodation_frame
 {
     height: 200px;
     display: flex;
@@ -233,7 +239,7 @@ button
 {
     background-image: url("images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
 }
-#accomodation_text
+.accomodation_text
 {
     display: flex;
     flex-direction: column;
@@ -279,7 +285,7 @@ button
 {
     width: 70px;
 }
-#host
+.host
 {
     margin: 7px 0px;
     font-size: large;
@@ -310,7 +316,7 @@ button
     flex-direction: column;
     justify-content: space-around;
 }
-#popular_frame
+.popular_frame
 {
     width: 80%;
     display: inline-flex;
@@ -342,7 +348,7 @@ button
     background-size: 130px !important;
     background-image: url("images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
 }
-#popular_text
+.popular_text
 {
     width: 60%;
     display: flex;
@@ -368,7 +374,7 @@ button
 {
     width: 55px;
 }
-#block2
+#section_activities
 {
     width: 90%;
     margin: auto;
@@ -380,7 +386,7 @@ button
     display: flex;
     margin-bottom: 60px;
 }
-#activities_frame
+.activities_frame
 {
     display: flex;
     flex-direction: column;
@@ -434,13 +440,13 @@ button
     background-position: top !important;
     background-image: url("images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
 }
-#frames
+.frames
 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-#activities_frame span
+.activities_frame span
 {
     margin: 15px 15px;
     font-size: large;
@@ -459,13 +465,13 @@ footer
     display: flex;
     flex-direction: row;
 }
-#footer_content
+.footer_content
 {
     display: flex;
     margin-right: 300px;
     flex-direction: column;
 }
-#footer_content a
+.footer_content a
 {
     margin-bottom: 15px;
 }
