@@ -208,7 +208,7 @@ input[type=submit]
     color: rgb(0, 101, 255);
     border: 1px solid #d9d9d9;
 }
-#section_accomodation
+main
 {
     width: 90%;
     height: 650px;
@@ -217,21 +217,21 @@ input[type=submit]
     justify-content: space-between;
     font-family: "raleway-bold", sans-serif;
 }
-#accommodation, #popular
+#section_accommodation, #popular
 {
     background-color: rgb(242, 242, 242);
     border-radius: 30px;
 }
-#accommodation
+#section_accommodation
 {
     width: 65%;
 }
-#accommodation_block
+#accommodation
 {
     width: 90%;
     margin: auto;
 }
-#accommodation h2
+#section_accommodation h2
 {
     margin: 40px auto 10px;
 }
@@ -522,15 +522,16 @@ footer
     display: flex;
     flex-direction: row;
 }
-h4
-{
-    font-family: "raleway-bold", sans-serif;
-}
 .footer_content
 {
     display: flex;
     margin-right: 300px;
     flex-direction: column;
+}
+.footer_content h2
+{
+    font-size: 1.1em;
+    font-family: "raleway-bold", sans-serif;
 }
 .footer_content a
 {
