@@ -33,7 +33,13 @@
     font-weight: normal;
     font-style: normal;
 }
-
+@font-face
+{
+    font-family: 'Raleway-extrabold';
+    src: url('polices/static/Raleway-ExtraBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body
 {
@@ -141,9 +147,8 @@ input[type=submit]
     border: none;
     outline: none;
     cursor: pointer;
-    font-family: "raleway-regular", sans-serif;
-    font-weight: bold;
-    font-size: 1.2em;
+    font-family: "raleway-bold", sans-serif;
+    font-size: 1.1em;
 }
 #filter
 {
@@ -152,6 +157,8 @@ input[type=submit]
     align-items: center;
     justify-content: space-between;
     margin-bottom: 30px;
+    font-family: "raleway-bold", sans-serif;
+    font-size: 1.1em;
 }
 .button
 {
@@ -208,6 +215,7 @@ input[type=submit]
     margin: 30px auto 40px;
     display: flex;
     justify-content: space-between;
+    font-family: "raleway-bold", sans-serif;
 }
 #accommodation, #popular
 {
@@ -222,10 +230,6 @@ input[type=submit]
 {
     width: 90%;
     margin: auto;
-}
-#section_accomodation a
-{
-    font-family: raleway;
 }
 #accommodation h2
 {
@@ -330,7 +334,17 @@ input[type=submit]
 .host
 {
     margin: 7px 0px;
-    font-size: large;
+    font-family: "raleway-bold", sans-serif;
+    font-size: 1.1em;
+}
+.night
+{
+    font-family: "raleway-regular", sans-serif;
+    font-size: 0.9em;
+}
+.more
+{
+    font-size: 1.2em;
 }
 #popular
 {
@@ -420,6 +434,7 @@ input[type=submit]
 {
     width: 90%;
     margin: auto;
+    font-family: "raleway-bold", sans-serif;
 }
 #activities
 {
@@ -506,6 +521,10 @@ footer
     margin: auto;
     display: flex;
     flex-direction: row;
+}
+h4
+{
+    font-family: "raleway-bold", sans-serif;
 }
 .footer_content
 {
