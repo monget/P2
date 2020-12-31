@@ -41,12 +41,17 @@ header
     font-family: "Raleway-light", sans-serif;
     font-weight: 500;
 }
-header nav
+#header
 {
-    width: 30%;
-    margin-right: 2%;
-    display: inline-flex;
+    display: flex;
+    position: absolute;
+    right: 18%;
+    width: 18%;
     justify-content: space-between;
+}
+#header nav
+{
+    display: contents;
 }
 .header_block
 {
@@ -56,6 +61,8 @@ header nav
 }
 .register
 {
+    position: relative;
+    top: 50px;
     font-family: "raleway-bold", sans-serif;
     color: rgb(0, 101, 252);
 }
@@ -83,13 +90,12 @@ header nav
 #logo
 {
     width: 100px;
-    height: 50px;
     margin-top: 50px;
 }
 
 /******************************************************* FILTER *******************************************************/
 
-.section_filter
+#section_filter
 {
     width: 90%;
     margin: auto;
@@ -129,6 +135,7 @@ h1
   }
 input[type=submit]
 {
+    display: block;
     width: 130px;
     color: white;
     background-color: #0065FC;
@@ -138,6 +145,18 @@ input[type=submit]
     cursor: pointer;
     font-family: "raleway-bold", sans-serif;
     font-size: 1.1em;
+}
+.fa-search
+{
+    display: none !important;
+    color: white;
+    background-color: #0065FC;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px;
+    font-size: 1.2em;
 }
 #filter
 {
@@ -499,11 +518,11 @@ main
     background-position: top;
     background-image: url("images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg");
 }
-.activities_picture6
+.activities_pictures6
 {
     height: 180px;
-    background-size: 330px 230px;
-    background-position: top !important;
+    background-size: 330px;
+    background-position: top;
     background-image: url("images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
 }
 .frames
@@ -556,6 +575,10 @@ footer
 
 @media (max-width: 1500px)
 {
+    #header
+    {
+        width: 22%;
+    }
     #buttons
     {
         width: 85%;
@@ -578,9 +601,10 @@ footer
 }
 @media (max-width: 1024px)
 {
-    header nav
+    #header
     {
-        width: 40%;
+        width: 25%;
+        right: 22%;
     }
     h1
     {
@@ -626,9 +650,10 @@ footer
 }
 @media (max-width: 950px)
 {
-    header nav
+    #header
     {
-        width: 50%;
+        width: 29%;
+        right: 24%;
     }
     #filter
     {
@@ -668,6 +693,11 @@ footer
 }
 @media (max-width: 850px)
 {
+    #header
+    {
+        width: 35%;
+        right: 30%;
+    }
     #filter a
     {
         margin-bottom: 10px;
@@ -675,11 +705,7 @@ footer
 }
 @media (max-width: 750px)
 {
-    header nav
-    {
-        width: 55%;
-    }
-    .section_filter, main, #section_activities
+    #section_filter, main, #section_activities
     {
         width: 95%;
         margin: auto;
@@ -705,10 +731,57 @@ footer
     {
         border-radius: 0%;
     }
-
 }
 @media (max-width: 710px)
 {
+    header
+    {
+        width: 100%;
+        padding-bottom: 70px;
+    }
+    #logo {
+        margin: 32px 0px 0px 20px;
+    }
+    .register {
+        position: absolute;
+        right: 20px;
+    }
+    #header
+    {
+        width: 100%;
+        position: absolute;
+        top: 100px;
+        right: 0%;
+    }
+    #header nav
+    {
+        width: 100%;
+        justify-content: space-around;
+        display: flex;
+    }
+    .header_block
+    {
+        width: 100%;
+        flex-direction: initial;
+    }
+    .header_block a
+    {
+        position: initial;
+    }
+    .lign
+    {
+        top: 13px;
+        visibility: visible;
+        border: 1px solid rgb(242, 242, 242);
+    }
+    .header_block a:hover .lign
+    {
+        border: 1px solid rgb(0, 101, 252);
+    }
+    #search
+    {
+        margin-top: 30px;
+    }
     #accomodation_content, #activities
     {
         justify-content: center;
@@ -734,14 +807,98 @@ footer
 }
 @media (max-width: 465px)
 {
+    h1
+    {
+        font-size: 1.3em;
+        padding-right: 20px;
+    }
+    #section_filter
+    {
+        width: 95%;
+    }
+    #town
+    {
+        width: 220px;
+    }
+    input[type=submit]
+    {
+        display: none;
+    }
+    .fa-search
+    {
+        display: block !important;
+        position: relative;
+        left: -13px;
+    }
     #filter, #info
     {
         margin-bottom: 20px;
     }
-    #info p
+    .activities_pictures
     {
-        padding-top: 20px;
+        height: 130px !important;
     }
-
+    .activities_pictures1
+    {
+        background-size: 330px;
+        background-position: 50% 20%;
+    }
+    .activities_pictures2
+    {
+        background-position: 50% 45%;
+    }
+    .activities_pictures3
+    {
+        background-size: 330px;
+        background-position: 50% 15%;
+    }
+    .activities_pictures4
+    {
+        background-size: 330px;
+    }
+    .activities_pictures5
+    {
+        background-position: 50% 20%;
+    }
+    .activities_pictures6
+    {
+        background-position: 50% 30%;
+    }
 }
-
+@media (max-width: 370px)
+{
+    h1
+    {
+        padding-right: 0px;
+    }
+    .fa-map-marker-alt
+    {
+        padding: 15px 15px;
+    }
+    #town
+    {
+        width: 170px;
+        padding-left: 10px;
+    }
+    #title
+    {
+        width: 95%;
+    }
+    .popular_frame
+    {
+        width: 95%;
+    }
+    .popular_text
+    {
+        padding-left: 10px;
+    }
+    .accomodation_picture
+    {
+        width: 240px;
+        background-size: 240px;
+    }
+    .activities_pictures
+    {
+        width: 250px;
+    }
+}

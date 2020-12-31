@@ -11,32 +11,32 @@
     <body>
         <header>
             <img alt="Reservia" id="logo" src="images/logo/Reservia@3x.png">
-            <nav>
-                <div class="header_block">
-                    <a href="#accommodation">Hébergements
-                        <div class="lign"></div>
-                    </a>
-                </div>
-                <div class="header_block">
-                    <a href="#activities">Activités
-                        <div class="lign"></div>
-                    </a>
-                </div>
-                <div class="header_block">
-                    <a class="register" href="#">S'inscrire</a>
-                </div>
-            </nav>
+            <div id="header">
+                <nav>
+                    <div class="header_block">
+                        <a href="#accommodation">Hébergements
+                            <div class="lign"></div>
+                        </a>
+                    </div>
+                    <div class="header_block">
+                        <a href="#activities">Activités
+                            <div class="lign"></div>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <a class="register" href="#">S'inscrire</a>
         </header>
 
-        <section class="section_filter">            
+        <section id="section_filter">            
             <h1>Trouver votre hebergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
            
-
             <form id="search">
                 <i class="fas fa-map-marker-alt"></i>
                 <input id="town" placeholder="Marseille,France" required>
                 <input type="submit" value="Rechercher">
+                <i type="submit" class="fas fa-search"></i>
             </form>
 
             <div id="filter">
@@ -195,7 +195,7 @@
                         <span>Notre-Dame-de-la-Garde</span>
                     </a>
                     <a href="#" class="activities_frame">
-                        <div class="activities_pictures activities_picture6"></div>
+                        <div class="activities_pictures activities_pictures6"></div>
                         <span>Parc Longchamp</span>
                     </a>
                 </div>
