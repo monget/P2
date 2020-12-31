@@ -24,6 +24,14 @@ body
     margin: 0px;
     font-family: "Raleway-regular", sans-serif;
 }
+body a
+{
+    color: black;
+    text-decoration: none;
+}
+
+/******************************************************* HEADER *******************************************************/
+
 header
 {
     display: flex;
@@ -72,21 +80,19 @@ header nav
 {
     visibility: visible;
 }
-body a
-{
-    color: black;
-    text-decoration: none;
-}
-.section_filter
-{
-    width: 90%;
-    margin: auto;
-}
 #logo
 {
     width: 100px;
     height: 50px;
     margin-top: 50px;
+}
+
+/******************************************************* FILTER *******************************************************/
+
+.section_filter
+{
+    width: 90%;
+    margin: auto;
 }
 h1
 {
@@ -135,13 +141,19 @@ input[type=submit]
 }
 #filter
 {
-    width: 65%;
+    width: 100%;
     display: inline-flex;
     align-items: center;
-    justify-content: space-between;
     margin-bottom: 30px;
     font-family: "raleway-bold", sans-serif;
     font-size: 1.1em;
+}
+#buttons
+{
+    width: 65%;
+    display: inline-flex;
+    margin-left: 40px;
+    justify-content: space-between;
 }
 .button
 {
@@ -180,6 +192,10 @@ input[type=submit]
 {
     margin: 12px 20px 0px 5px;
 }
+#info
+{
+    display: flex;
+}
 .fa-info
 {
     font-size: 12px;
@@ -187,14 +203,17 @@ input[type=submit]
     padding: 7px;
     margin-right: 10px;
     text-align: center;
+    align-self: center;
     border-radius: 50%;
     color: rgb(0, 101, 255);
     border: 1px solid #d9d9d9;
 }
+
+/******************************************************* MAIN *******************************************************/
+
 main
 {
     width: 90%;
-    height: 650px;
     margin: 30px auto 40px;
     display: flex;
     justify-content: space-between;
@@ -213,6 +232,7 @@ main
 {
     width: 90%;
     margin: auto;
+    padding-bottom: 30px;
 }
 #section_accommodation h2
 {
@@ -328,6 +348,7 @@ main
 .more
 {
     font-size: 1.2em;
+    margin-bottom: 10px;
 }
 #popular
 {
@@ -338,7 +359,7 @@ main
     width: 80%;
     display: flex;
     justify-content: space-between;
-    margin: 40px auto 5px;
+    margin: 40px auto 10px;
 }
 .fa-chart-line
 {
@@ -350,6 +371,8 @@ main
 }
 #popular_content
 {
+    width: 80%;
+    margin: auto;
     height: 85%;
     display: flex;
     flex-direction: column;
@@ -357,7 +380,7 @@ main
 }
 .popular_frame
 {
-    width: 80%;
+    width: 100%;
     display: inline-flex;
     margin: 0px auto 25px;
     padding: 5px;
@@ -413,6 +436,9 @@ main
 {
     width: 55px;
 }
+
+/******************************************************* ACTIVITIES *******************************************************/
+
 #section_activities
 {
     width: 90%;
@@ -421,9 +447,8 @@ main
 }
 #activities
 {
-    height: 450px;
-    justify-content: space-between;
     display: flex;
+    justify-content: space-between;
     margin-bottom: 60px;
 }
 .activities_frame
@@ -437,45 +462,46 @@ main
 {
     width: 330px;
     background-repeat: no-repeat;
-    background-position: center;
     border-radius: 20px 20px 0px 0px;
 }
 .activities_pictures1
 {
     height: 450px;
-    background-size: 700px;
+    background-size: 740px;
+    background-position: top;
     background-image: url("images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
 }
 .activities_pictures2
 {
-    height: 180px;
-    background-size: 330px;
-    background-position: 50% 45% !important;
+    height: 210px;
+    background-size: 340px;
+    background-position: 50% 40%;
     background-image: url("images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
 }
 .activities_pictures3
 {
-    height: 130px;
+    height: 140px;
     background-size: 350px;
-    background-position: 50% 20% !important;
+    background-position: 50% 5%;
     background-image: url("images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
 }
 .activities_pictures4
 {
     height: 450px;
-    background-size: 800px;
+    background-size: 780px;
+    background-position: 50% 15%;
     background-image: url("images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
 }
 .activities_pictures5
 {
     height: 160px;
     background-size: 350px;
-    background-position: top !important;
+    background-position: top;
     background-image: url("images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg");
 }
 .activities_picture6
 {
-    height: 160px;
+    height: 180px;
     background-size: 330px 230px;
     background-position: top !important;
     background-image: url("images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
@@ -488,27 +514,26 @@ main
 }
 .activities_frame span
 {
-    margin: 15px 15px;
+    margin: 20px 17px;
     font-size: large;
     font-weight: bold;
 }
+
+/******************************************************* FOOTER *******************************************************/
+
 footer
 {
-    height: 220px;
-    display: flex;
     background-color: rgb(242, 242, 242);
 }
 #block_footer
 {
     width: 90%;
     margin: auto;
-    display: flex;
-    flex-direction: row;
+    padding: 30px 0px;
 }
 .footer_content
 {
     display: flex;
-    margin-right: 300px;
     flex-direction: column;
 }
 .footer_content h2
@@ -520,3 +545,149 @@ footer
 {
     margin-bottom: 15px;
 }
+#block_footer div
+{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/******************************************************* MEDIA *******************************************************/
+
+@media (max-width: 1500px)
+{
+    #activities
+    {
+        width: 80%;
+        margin: auto;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .activities_frame
+    {
+        margin-bottom: 30px;
+    }
+}
+@media  (max-width: 1024px)
+{
+    header nav
+    {
+        width: 40%;
+    }
+    h1
+    {
+        font-size: 1.2em;
+    }
+    #buttons
+    {
+        width: 100%;
+    }
+    main
+    {
+        flex-direction: column-reverse;
+    }
+    #section_accommodation, #popular
+    {
+        width: 100%;
+    }
+    #title, #accommodation
+    {
+        width: 95%;
+    }
+    #popular_content
+    {
+        width: 98%;
+        flex-direction: row;
+    }
+    #popular
+    {
+        margin-bottom: 20px;
+    }    
+    .popular_frame
+    {
+        width: 30%;
+    }
+    #block_footer div
+    {
+        width: 90%;
+    }
+}
+@media (max-width: 850px)
+{
+    header nav
+    {
+        width: 50%;
+    }
+    #filter
+    {
+        display: block;
+    }
+    #title
+    {
+        width: 90%;
+    }
+    #popular_content
+    {
+        flex-direction: column;
+    }
+    .popular_frame
+    {
+        width: 90%;
+    }
+    #buttons
+    {
+        height: 120px;
+        flex-wrap: wrap;
+        margin-left: 0px;
+    }
+    #activities
+    {
+        width: 100%;
+    }
+    #block_footer div
+    {
+        width: 100%;
+    }
+}
+@media (max-width: 670px)
+{
+    .section_filter, main, #section_activities
+    {
+        width: 95%;
+        margin: auto;
+    }
+}
+@media (max-width: 450px)
+{
+    #buttons
+    {
+        height: 180px;
+    }
+    #filter
+    {
+        margin-bottom: 20px;
+    }
+    #info p
+    {
+        padding-top: 20px;
+    }
+    main
+    {
+        width: 100%;
+        padding-top: 30px;
+    }
+    #section_accommodation
+    {
+        background-color: white;
+    }
+    #popular
+    {
+        border-radius: 0%;
+    }
+    #block_footer div
+    {
+        display: block;
+    }
+
+}
+

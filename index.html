@@ -2,6 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css" />
         <script src="https://kit.fontawesome.com/54a0f1c186.js" crossorigin="anonymous"></script>
         <title>Reservia</title>
@@ -40,27 +41,29 @@
 
             <div id="filter">
                 <p>Filtres</p>
-                <a href="#">
-                    <div class="button"><i class="fas fa-money-bill-wave"></i></div>
-                    <span>Économique</span>
-                </a>
-                <a href="#">
-                    <div class="button"><i class="fas fa-child"></i></div>
-                    <span>Familial</span>
-                </a>
-                <a href="#">
-                    <div class="button"><i class="fas fa-heart"></i></div>
-                    <span>Romantique</span>
-                </a>
-                <a href="#">
-                    <div class="button"><i class="fas fa-dog"></i></div>
-                    <span>Animaux autorisés</span>
-                </a>
+                <div id="buttons">
+                    <a href="#">
+                        <div class="button"><i class="fas fa-money-bill-wave"></i></div>
+                        <span>Économique</span>
+                    </a>
+                    <a href="#">
+                        <div class="button"><i class="fas fa-child"></i></div>
+                        <span>Familial</span>
+                    </a>
+                    <a href="#">
+                        <div class="button"><i class="fas fa-heart"></i></div>
+                        <span>Romantique</span>
+                    </a>
+                    <a href="#">
+                        <div class="button"><i class="fas fa-dog"></i></div>
+                        <span>Animaux autorisés</span>
+                    </a>
+                </div>
             </div>
 
-            <div>
+            <div id="info">
                 <i class="fas fa-info"></i>
-                <span>Plus de 500 logements sont disponible dans cette ville</span>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </section>
 
@@ -201,24 +204,26 @@
 
         <footer>
             <div id="block_footer">
-                <nav class="footer_content">
-                    <h2>A propos</h4>
-                    <a href="#">Fonctionnement du site</a>
-                    <a href="#">Conditions générales de vente</a>
-                    <a href="#">Données et confidentialité</a>
-                </nav>
+                <div>
+                    <nav class="footer_content">
+                        <h2>A propos</h4>
+                        <a href="#">Fonctionnement du site</a>
+                        <a href="#">Conditions générales de vente</a>
+                        <a href="#">Données et confidentialité</a>
+                    </nav>
 
-                <nav class="footer_content">
-                    <h2>Nos hébergements</h4>
-                    <a href="#">Charte qualité</a>
-                    <a href="#">Soumettre votre hôtel</a>
-                </nav>
+                    <nav class="footer_content">
+                        <h2>Nos hébergements</h4>
+                        <a href="#">Charte qualité</a>
+                        <a href="#">Soumettre votre hôtel</a>
+                    </nav>
 
-                <nav class="footer_content">
-                    <h2>Assistance</h4>
-                    <a href="#">Centre d'aide</a>
-                    <a href="#">Nous contacter</a>
-                </nav>
+                    <nav class="footer_content">
+                        <h2>Assistance</h4>
+                        <a href="#">Centre d'aide</a>
+                        <a href="#">Nous contacter</a>
+                    </nav>
+                </div>
             </div>
         </footer>
     </body>
