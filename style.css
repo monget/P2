@@ -830,9 +830,17 @@ footer
         position: relative;
         left: -13px;
     }
-    #filter, #info
+    #filter
+    {
+        margin-bottom: 0px;
+    }
+    #info
     {
         margin-bottom: 20px;
+    }
+    #info p
+    {
+        padding-top: 20px;
     }
     .activities_pictures
     {
@@ -900,5 +908,10 @@ footer
     .activities_pictures
     {
         width: 250px;
+    }
+    .activities_frame span {
+        margin: 10px 10px;
+        font-size: initial;
+        font-weight: bold;
     }
 }
